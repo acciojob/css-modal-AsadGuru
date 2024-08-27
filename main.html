@@ -10,6 +10,8 @@
             font-size: 16px;
             padding: 10px 20px;
             cursor: pointer;
+            display: inline-block;
+            margin: 20px;
         }
 
         /* The modal background (overlay) */
@@ -23,6 +25,7 @@
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+            transition: opacity 0.3s ease;
         }
 
         /* Modal content box */
@@ -32,6 +35,8 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 500px; /* Restrict the width */
+            position: relative;
         }
 
         /* The header of the modal */
@@ -39,6 +44,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
         }
 
         /* The close button */
@@ -59,7 +65,7 @@
 
         /* The body of the modal */
         .modal-body {
-            margin-top: 10px;
+            font-size: 16px;
         }
 
         /* Show modal when the target matches */
